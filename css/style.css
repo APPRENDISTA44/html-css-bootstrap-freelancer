@@ -9,6 +9,16 @@
     margin-bottom: 30px;
   }
 }
+.ms_line_white{
+  display: inline-block;
+  width: 80px;
+  border: 2px solid white;
+}
+.ms_line_black{
+  display: inline-block;
+  width: 80px;
+  border: 2px solid black;
+}
 /*header*/
 .primary_nav{
   background-color: #2D3E50;
@@ -43,10 +53,40 @@
   height: 300px;
   background-color: #ba4b63;
   margin-bottom: 30px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
 }
+.ms_portfolio_item img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+}
+[class*="col-"]:nth-child(2) .ms_portfolio_item{
+  background-color: #1ea4b6;
+}
+[class*="col-"]:nth-child(3) .ms_portfolio_item{
+  background-color: #140f0f;
+}
+[class*="col-"]:nth-child(4) .ms_portfolio_item{
+  background-color: #1c83c1;
+}
+[class*="col-"]:nth-child(5) .ms_portfolio_item{
+  background-color: #0e38b5;
+}
+[class*="col-"]:nth-child(6) .ms_portfolio_item{
+  background-color: #ccb2a3;
+}
+
+
 /*sezione about*/
 .ms_about_text{
   margin-bottom: 30px;
+}
+main .ms_section_jumbo .ms_teaser img{
+  height: 200px;
 }
 
 /* inizio footer */
